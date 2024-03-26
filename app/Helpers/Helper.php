@@ -339,11 +339,13 @@ class Helper
                 'LAPORAN PEMERIKSAAN AKHIR, PEMBUNGKISAN DAN PENGHANTARAN KE STOR Verify QC',
                 'LAPORAN PEMERIKSAAN AKHIR, PEMBUNGKISAN DAN PENGHANTARAN KE STOR Transfer to store',
                 'LAPORAN PEMERIKSAAN AKHIR, PEMBUNGKISAN DAN PENGHANTARAN KE STOR Receive by store',
-                ]
+            ]
         ];
 
         $wms_dashboards = [
-
+            'INVENTORY SHOPFLOOR' => [
+                'INVENTORY SHOPFLOOR View',
+            ]
         ];
 
         $reports = [
