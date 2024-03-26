@@ -10,9 +10,9 @@ use Illuminate\Support\Facades\Auth;
 class InvertoryShopfloorController extends Controller
 {
     public function index(){
-        // if (!Auth::user()->hasPermissionTo('INVENTORY SHOPFLOOR View')) {
-        //     return back()->with('custom_errors', 'You don`t have Right Permission');
-        // }
+        if (!Auth::user()->hasPermissionTo('INVENTORY SHOPFLOOR View')) {
+            return back()->with('custom_errors', 'You don`t have Right Permission');
+        }
         $areas = DB::table('areas')
         ->select(
             'areas.id as area_id',
